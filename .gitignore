@@ -1,0 +1,35 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+.venv-linux/
+PythonTest/
+venv/
+env/
+
+# Private databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Backups
+backups/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+.pytest_cache/
+EOF
